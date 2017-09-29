@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Java and Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript">
+         function start_animation(){
+             for (var k=0; k<document.applets.length; k++)
+                 document.applets[k].start_drawing();
+                    } 
+         function stop_animation(){
+             for (var k=0; k<document.applets.length; k++)
+                 document.applets[k].stop_drawing();
+                    }            
+        </script>
+    </head>
+    <body>
+        <H1>Your Connection</H1>
+    <APPLET CODE="circles.class" NAME="mycircles1" width=100 HEIGHT=75></APPLET>
+    <p>
+    <APPLET CODE="circles.class" NAME="mycircles2" width=150 HEIGHT=100></APPLET>
+    </p>
+    <P>
+    <form>
+        <INPUT TYPE="button" value="Begin"
+            onClick="start_animation();">
+        <INPUT TYPE="button" value="Final"
+               onClick="stop_animation();">
+         </P>
+    </form>
+    </body>
+</html>
